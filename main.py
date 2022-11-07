@@ -14,15 +14,15 @@ y = []
 temp = list(var['DailyReturn']/100+1)
 
 # This function does our total Return Calculation
-def product(ending):
+def product(ending,arr):
     result = 1
     for i in range(0, ending):
-        result *= temp[i]
+        result *= arr[i]
     return (result-1)*100
 
 # We calculate total return for all of our data points
 for i in range(1, len(temp)+1):
-    y.append(product(i))
+    y.append(product(i,temp))
 
 # Creating and initializing the line graph
 plt.figure(figsize=(10, 10))
