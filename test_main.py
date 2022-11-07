@@ -8,7 +8,7 @@ class test_main(unittest.TestCase):
         # This array has the daily return fake data similar to our excel sheet
         inArr=[1.01,1.02,1.03]
 
-        # this array has expected values for total return after manual/excel calculations
+        # this array has expected values for the total returns after manual/excel calculations
         expectedArr=[1.00,3.02,6.11]
 
         # This array will hold values that our product function returns

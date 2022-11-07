@@ -20,7 +20,7 @@ def product(ending,arr):
         result *= arr[i]
     return (result-1)*100
 
-# We calculate total return for all of our data points
+# Calculating total return for all of our data points
 for i in range(1, len(temp)+1):
     y.append(product(i,temp))
 
